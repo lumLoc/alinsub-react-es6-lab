@@ -1,17 +1,17 @@
 import React from 'react';
 import UserList from './UserList';
+import Counter from './Counter';
 
 function App() {
   const users = ['Alice', 'Bob', 'Charlie'];
 
   return (
     <div>
-      <h2>User List</h2>
       <UserList users={users} />
+      <Counter />
     </div>
   );
 }
 
 export default App;
-
 
