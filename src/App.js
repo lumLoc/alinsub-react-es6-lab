@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import UserList from './UserList';
 
 function App() {
-  // ES6 Array & Arrow Function
-  const names = ['Alice', 'Bob', 'Charlie'];
-  const doubled = names.map(name => name.length * 2);
-  console.log('Doubled lengths:', doubled);
-
-  // ES6 Object Destructuring
-  const person = { name: 'Alice', age: 25 };
-  const { name, age } = person;
-  console.log('Destructured:', name, age);
+  const users = ['Alice', 'Bob', 'Charlie'];
 
   return (
     <div>
-      <h1>ES6 Features in React</h1>
-      <p>Check the browser console for output.</p>
+      <h2>User List</h2>
+      <UserList users={users} />
     </div>
   );
 }
 
 export default App;
+
 
