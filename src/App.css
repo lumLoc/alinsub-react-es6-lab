@@ -1,38 +1,93 @@
-.App {
+/* Reset some basic styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* App container */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.app-header {
   text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  color: #555;
+  font-size: 1.1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Sections */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* Greeting */
+.greeting .welcome {
+  color: #2e7d32;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.greeting .login-prompt {
+  color: #d32f2f;
+  font-weight: bold;
 }
+
+/* User list */
+.user-list-section ul,
+.api-users-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list-section li,
+.api-users-section li {
+  background-color: #e3f2fd;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+/* Counter button */
+.counter-section button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.counter-section button:hover {
+  background-color: #115293;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 2px solid #ddd;
+}
+
